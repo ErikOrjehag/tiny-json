@@ -115,10 +115,10 @@ module.exports = (function () {
   }
 
   return {
-    // Public
+    // public
     pack: pack,
     unpack: unpack,
-    // Testing
+    // testing
     _compress: compress,
     _decompress: decompress
   };

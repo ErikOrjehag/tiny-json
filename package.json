@@ -1,0 +1,38 @@
+{
+	"name": "tiny-json",
+	"version": "0.0.1",
+	"desciption": "A new approach to packing JSON data ~ 80%",
+	"keywords": [
+		"json",
+		"pack",
+		"compress",
+		"encode",
+		"shorten",
+		"small",
+		"tiny",
+		"short",
+		"compression",
+		"minify",
+		"dna",
+		"many"
+	],
+	"homepage": "https://github.com/ErikOrjehag/tiny-json",
+	"bugs": {
+		"url": "https://github.com/ErikOrjehag/tiny-json/issues",
+		"email": "erik@orjehag.se"
+	},
+	"license": "MIT",
+	"author": "Erik Örjehag <erik@orjehag.se> (http://orjehag.se)",
+	"files": ["tiny-json.js"],
+	"main": "tiny-json",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ErikOrjehag/tiny-json.git"
+	},
+	"dependencies": {
+		"lz-string": "1.3.3"
+	},
+	"devDependencies": {
+		"mocha": "^1.21.4"
+	}
+}
