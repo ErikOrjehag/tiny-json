@@ -154,9 +154,9 @@ Any value, will not be compressed.
 # How to contribute
 The source is well structured and easy to expand upon. If you come up with a way to compress a certain data type your contribution is welcome. Read this [blog post](http://www.davidhampgonsalves.com/Compress-JSON.js/) written by David Hamp-Gonsalves for some great inspiration.
 
-All it takes is three simple steps.
+It's only a few simple steps.
 
-Add a compress method:
+1) Add a compress method:
 ```javscript
 compress.something = function (value, pattern) {
   // Compress the value in some smart way.
@@ -166,7 +166,7 @@ compress.something = function (value, pattern) {
 };
 ```
 
-Add a uncompress method:
+2) Add a uncompress method:
 ```javascript
 uncompress.something = function (value, pattern) {
   // Undo whatever you did to compress the value.
@@ -174,11 +174,13 @@ uncompress.something = function (value, pattern) {
 };
 ```
 
-Add a test for each of the methods:
+3) Add a test for each of the methods:
 ```javascript
 it('something', function () {
   assert.strictEqual(tiny._compress('my value'), 'my value');
 });
 ```
+
+4) Add the type to the "full list of patterns" in the README.
 
 And thats it! Commit and push your changes and they will be merged asap.
