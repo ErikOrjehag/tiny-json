@@ -1,0 +1,1 @@
+This is a the readme for tiny-json.

@@ -1,6 +1,6 @@
 {
 	"name": "tiny-json",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"desciption": "A new approach to packing JSON data ~ 80%",
 	"keywords": [
 		"json",
@@ -24,7 +24,7 @@
 	"license": "MIT",
 	"author": "Erik Örjehag <erik@orjehag.se> (http://orjehag.se)",
 	"files": ["tiny-json.js"],
-	"main": "tiny-json",
+	"main": "tiny-json.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ErikOrjehag/tiny-json.git"
