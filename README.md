@@ -1,4 +1,4 @@
-# The idea
+# tiny-json
 This is a node module that takes an unique approach to packing JSON data. It is said that 99.9% of human DNA is exactly the same in all people. The most efficient way of storing information about a million people must therefore be to store what they have in common (the 99.9%) in one place, and then all the million small things (0.1%) that makes us unique separate. You'll often find that JSON objects also have a lot in common, and this the idea behind tiny-json.
 
 This is super useful if you want to save a lot a similar JSON data as strings in a key value database like Redis. You'll save a lot of space and have great performance improvments. Long strings makes Redis queries slow!
