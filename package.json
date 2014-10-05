@@ -1,6 +1,6 @@
 {
 	"name": "tiny-json",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"desciption": "A new approach to packing JSON data ~ 80%",
 	"keywords": [
 		"json",
