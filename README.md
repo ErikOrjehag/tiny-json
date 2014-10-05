@@ -19,16 +19,18 @@ var fistData = {
   bar: true
 };
 
-var secondsData = {
+var secondData = {
   foo: [17, 123],
   bar: false
 };
 
-var firstPacked = tiny.pack(data, pattern);
+var firstPacked = tiny.pack(fistData, pattern);
 // [[1337,42,127],1]
+// 32 -> 17 chars: 47% compression!
 
-var secondPacked = tiny.pack(data, pattern);
+var secondPacked = tiny.pack(secondData, pattern);
 // [[17,123],0]
+// 28 -> 12 chars: 57% compression!
 
 var firstUnpacked = tiny.unpack(data, pattern);
 var secondUnpacked = tiny.unpack(data, pattern);
@@ -56,7 +58,7 @@ tiny.pack(data, pattern);
 //  [12,'㶃낦@츋悆ư琂㡀曀ᎅ㨒耀',0],
 //  [15,'㶆낆ৠЃ悦Ű㎔๨ꠠᘄ녀᳀ু梐墄저',1]]
 
-// original: 235 chars, packed: 81 chars. Thats 66% compression!
+// 235 -> 81 chars: 66% compression!
 
 ```
 
@@ -82,7 +84,7 @@ var data = {
 tiny.pack(data, pattern);
 // [1,0,[1,0,0,1],2,1]
 
-// original: 140 chars, packed: 19 chars. Thats 86% compression!
+// 140 -> 19 chars: 86% compression!
 ```
 
 This is pretty pointless but it works.
@@ -95,7 +97,7 @@ var data = 42;
 tiny.pack(data, pattern);
 // 42
 
-// Thats 0% compression! :P
+// 2 -> 2 chars: 0% compression! :P
 ```
 
 You can store intermediate patterns so that you dont repeat yourself.
@@ -128,7 +130,7 @@ tiny.pack(family, pattern);
 //  ['ႇ끆䀀',50,1],
 //  [['㒄낶䀀',19,2],['Ⲅ냖ࡠꘃ搀',15,4],['㊄ぎ␀',14,6]]]
 
-// original: 278 chars, packed: 71 chars. Thats 74% compression
+// 278 -> 71 chars: 74% compression!
 
 ```
 
